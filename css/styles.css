@@ -1,0 +1,321 @@
+/*Vista Movile*/
+@font-face {
+  font-family: "Philosopher-Regular";
+  src: url("../fonts/Philosopher-Regular.ttf");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+background-color:gainsboro;
+font-family: "Philosopher-Regular";
+}
+
+
+p {
+font-size: 1.5rem;
+}
+
+.menu{
+display: flex;
+align-items: center;
+}
+.menu li{
+padding: 10px;
+margin: 20px;
+border-style:outset;
+}
+
+/*Las siguientes configuraciones (img y .logo), hace que el logo se vea bien y no se valla de medida*/
+img{
+max-width: 100%;
+height: auto;
+}
+
+.logo{
+width: 50px;   
+}
+
+/*Container para index.html*/
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 60px;
+  display: grid;
+  grid-template-areas: "header header"
+  "parrafo parrafo"
+  "texto texto"
+  "articulos articulos"
+  "imagen imagen"
+  "footer footer" ;
+  grid-template-columns:  50% 50%;
+  grid-template-rows: 100px auto auto auto auto 100px;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+ /* background-color: rgba(199, 198, 198, 0.18);*/
+  height: 100vh;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+.header{
+  grid-area:header;
+  text-transform: uppercase;
+  border: 1px solid black;
+  background-color: rgba(153, 177, 19, 1);
+  padding: 3px;
+  display: flex;
+  justify-content:space-around;
+  align-items:flex-end;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  }
+  
+  .header nav ul {
+    display: flex;
+  /*     align-items: baseline; */
+    list-style-type: none;
+  }
+  
+  .header nav li {
+    margin-right: 15px;
+  }
+
+div#imagen{
+  grid-area: imagen;
+  /*background-color: #d5c9e2;*/
+  /*Lo siguiente es para que se vea bien la imagen*/
+  min-height: 300px;
+  background-image: url("../img/ancianos1.jpg");
+}
+
+
+div#parrafo {
+  grid-area: parrafo;
+}
+
+div#texto {
+grid-area: texto;
+}
+
+
+.articulos{
+grid-area: articulos;
+display: grid;
+grid-template-columns:80px;
+grid-gap: 1rem;
+}
+
+/*Las siguientes líneas son para el tamaño de los íconos de artículos y tamaño de letra*/
+.articulos .icon {
+  /*background-color:rgba(199, 198, 198, 0.18);*/
+  flex: 1 1 150px;
+}
+
+.articulos .icon img {
+max-width: 100%;
+}
+
+h2 {
+font-size: 12x;
+margin-bottom: 1rem;
+color:black;
+}
+
+h3 {
+font-size: 16px;
+margin-bottom: 1rem;
+color: black;
+}
+
+p {
+font-size: 10px;
+margin-bottom: .75rem;
+}
+
+
+footer {
+grid-area: footer;
+display: flex;
+color: #fff;
+bottom: 0;
+width:100%;
+justify-content:flex-start;
+padding: 3px;
+height: 55px;
+text-align: left;
+background-color: rgba(153, 177, 19, 1);
+}  
+
+footer p {
+color: #434344;
+font-size: 12px;
+padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Vista Desktop*/
+@media screen and (min-width:768px) {
+
+/*Container para index.html*/
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: grid;
+    grid-template-areas: "header header header"
+    "imagen parrafo parrafo"
+    "imagen parrafo parrafo"
+    "texto texto texto"
+    "articulos articulos articulos"
+    "footer footer footer" ;
+    grid-template-columns:  0.4fr 0.3fr 0.3fr;
+    grid-template-rows: 100px 70px auto 1fr 1fr 100px;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+   /* background-color: rgba(199, 198, 198, 0.18);*/
+    height: 100vh;
+}
+
+
+
+.header{
+    grid-area:header;
+    text-transform: uppercase;
+    border: 1px solid black;
+    background-color: rgba(153, 177, 19, 1);
+    padding: 3px;
+    display: flex;
+    justify-content:space-around;
+    align-items:flex-end;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    }
+    
+    .header nav ul {
+      display: flex;
+    /*     align-items: baseline; */
+      list-style-type: none;
+    }
+    
+    .header nav li {
+      margin-right: 15px;
+    }
+
+div#imagen{
+    grid-area: imagen;
+    /*background-color: #d5c9e2;*/
+    /*Lo siguiente es para que se vea bien la imagen*/
+    min-height: 300px;
+    background-image: url("../img/ancianos2.jpg");
+}
+
+
+div#parrafo {
+    grid-area: parrafo;
+}
+
+div#texto {
+  grid-area: texto;
+}
+
+
+  .articulos{
+  grid-area: articulos;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 1rem;
+  }
+
+/*Las siguientes líneas son para el tamaño de los íconos de artículos y tamaño de letra*/
+  .articulos .icon {
+    /*background-color:rgba(199, 198, 198, 0.18);*/
+    flex: 1 1 150px;
+}
+
+.articulos .icon img {
+ max-width: 100%;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 1rem;
+  color:black;
+}
+
+h3 {
+font-size: 48px;
+margin-bottom: 1rem;
+color: black;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: .75rem;
+}
+
+
+footer {
+  grid-area: footer;
+  display: flex;
+  color: #fff;
+  bottom: 0;
+  width:100%;
+  justify-content: space-around;
+  padding: 3px;
+  height: 55px;
+  text-align: left;
+  background-color: rgba(153, 177, 19, 1);
+}  
+
+footer p {
+  color: #434344;
+  font-size: 12px;
+  padding: 10px;
+}
+
+
+
+}
