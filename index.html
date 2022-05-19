@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alstore</title>
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -14,43 +15,43 @@
 
         <div class="header">
             <!-- inicio nav -->                        
-        <nav>
-        <a href="./index.html" class="logo"><img src="img/gw.jpg" alt=""></a>   
-        <ul class="menu">
-            
-            <li> 
-                <a href="./index.html">Home</a> 
-            </li>
-            <li>
-                <a href="pages/tienda.html">Tienda</a>
-            </li>
-            <li>
-                <a href="pages/explorar.html">Explorar</a>
-            </li>
-            <li>
-                <a href="pages/faq.html">FAQ</a>
-            </li>
-            <li>
-                <a href="pages/contacto.html">Contacto</a>
-            </li>
-            <li>
-                <a href="pages/recursos.html">Recursos</a>
-            </li>
-        </ul>
-        </nav>
+            <nav class="barra-navegacion">
+                <a href="../index.html" class="logo"><img src="../img/gw.jpg" alt=""></a>   
+                <input type="checkbox" id="check-menu">
+            <label for="check-menu" class="boton-menu"><i class='bx bx-menu'></i></label>
+                <ul class="lista-menu">
+                    <li class="item-menu"><a class="link-menu" href="./index.html"
+                            target="blank">Home</a></li>
+                    <li class="item-menu"><a class="link-menu" href="./pages/tienda.html" target="blank">Tienda</a>
+                    </li>
+                    <li class="item-menu"><a class="link-menu" href="./pages/explorar.html"
+                            target="blank">Explorar</a></li>
+                    <li class="item-menu"><a class="link-menu" href="./pages/faq.html" target="blank">FAQ</a>
+                    </li>
+                    <li class="item-menu"><a class="link-menu" href="./pages/contacto.html"
+                        target="blank">Contacto</a>
+                    </li>
+                    <li class="item-menu"><a class="link-menu" href="./pages/recursos.html" target="blank">Recursos</a>
+                    </li>
+                    
+                </ul>
+            </nav>
         <!-- fin nav --> 
         </div>
 
-        <div id="parrafo"><h3>Alcenter</h3><h2>Productos diseñados para personas con Alzheimer</h2>
+        <div class="parrafo"><h3>Alcenter</h3><h2>Productos diseñados para personas con Alzheimer</h2>
             <p>Nuestro objetivo es proveer los mejores productos para mejorar 
                 los aspectos cognitivos de las personas
                 con Alzheimer y lograr darles la mejor calidad de vida posible.
              </p>
         </div>
 
-        <div id="texto"><h3>Artículos recomendados</h3></div>
+        <div class="texto"><h3>Artículos recomendados</h3></div>
 
-        <div id="imagen"></div>
+        <div>
+            <img class="imagen" src="./img/ancianos2.jpg" alt="">
+        </div>
+
 
         <div class="articulos">
   

@@ -5,90 +5,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Recursos</title>
+    <title>Alstore</title>
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
-<body class="PageContainer">
-    <!-- inicio encabezado -->
-    <header class="sticky"> 
-                            
-    <!-- inicio nav -->                        
-        <nav>
-            <a href="../index.html" class="logo">
-                <img src="../img/gw.jpg" alt="">
-            </a>
+<body>
+    <div class="ContainerLinks">
 
-            <ul class="menu">
-                
-                <li> 
-                    <a href="../index.html">Home</a> 
-                </li>
-                <li>
-                    <a href="../pages/tienda.html">Tienda</a>
-                </li>
-                <li>
-                    <a href="../pages/explorar.html">Explorar</a>
-                </li>
-                <li>
-                    <a href="../pages/faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="../pages/contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="../pages/recursos.html">Recursos</a>
-                </li>
-            </ul>
-        </nav>
-    <!-- fin nav -->
-    </header>
-    <!-- fin encabezado -->
-    <main>
-
-        <section class="flex inicio">
-            <div>
-                <img src="../img/ancianos3.jpg" height="210"  alt="">
-            </div>
-            <article>
-				<h1>Alcenter</h1>
-                <h2>Links de interés</h2>
-                <p>Encuentre más información sobre el Alzheimer en los siguientes links
-                </p>
-            </article>
-        </section>
-
-        <section>
-            <article class="flex alinear colum">
-                <div><a title="Alz.org" href="https://www.alz.org/">
-					<img src="../img/alzheimer_logo_pagina1.jpg" alt="alzorg"/></a>
-				</div>
-				
-				<div><a title="Wikipedia" href="https://es.wikipedia.org/wiki/Enfermedad_de_Alzheimer">
-					<img src="../img/Wikipedia.jpg" alt="Wikipedia"/></a>
-				</div>
-
-                <div><a title="Medline Plus" href="https://medlineplus.gov/spanish/alzheimersdisease.html">
-					<img src="../img/MedlinePlus.jpg" alt="MedlinePlus"/></a>
-				</div>
-            
-            </article>
-        </section>
-    
-    </main>
-
-    <!-- inicio footer -->
-    <footer>
-        <!-- logo -->
-        <div class="logo">
-            <a href="../index.html"><img src="../img/gw.jpg" alt=""></a>
-        <!-- fin logo -->
+        <div class="header">
+            <!-- inicio nav -->                        
+            <nav class="barra-navegacion">
+                <a href="../index.html" class="logo"><img src="../img/gw.jpg" alt=""></a>   
+                <input type="checkbox" id="check-menu">
+            <label for="check-menu" class="boton-menu"><i class='bx bx-menu'></i></label>
+                <ul class="lista-menu">
+                    <li class="item-menu"><a class="link-menu" href="../index.html"
+                            target="blank">Home</a></li>
+                    <li class="item-menu"><a class="link-menu" href="../pages/tienda.html" target="blank">Tienda</a>
+                    </li>
+                    <li class="item-menu"><a class="link-menu" href="../pages/explorar.html"
+                            target="blank">Explorar</a></li>
+                    <li class="item-menu"><a class="link-menu" href="../pages/faq.html" target="blank">FAQ</a>
+                    </li>
+                    <li class="item-menu"><a class="link-menu" href="../pages/contacto.html"
+                        target="blank">Contacto</a>
+                    </li>
+                    <li class="item-menu"><a class="link-menu" href="../pages/recursos.html" target="blank">Recursos</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        <!-- fin nav --> 
         </div>
-        <p>Author: Germán Waisvol<br>
-        <a href="mailto:">german_waisvol@hotmail.com</a></p>
-    </footer>
-    <!-- fin footer -->
 
+        <div class="parrafo"><h3>Alcenter</h3><h2>Productos diseñados para personas con Alzheimer</h2>
+
+        </div>
+        
+        <div class="texto"><h3>Links de interés</h3></div>
+
+        <div>
+            <img class="imagen" src="../img/ancianos2.jpg" alt="">
+        </div>
+
+        <div class="Links">
+            <div><a title="Alz.org" href="https://www.alz.org/">
+                <img src="../img/alzheimer_logo_pagina1.jpg" alt="alzorg"/></a>
+            </div>
+            
+            <div><a title="Wikipedia" href="https://es.wikipedia.org/wiki/Enfermedad_de_Alzheimer">
+                <img src="../img/Wikipedia.jpg" alt="Wikipedia"/></a>
+            </div>
+
+            <div><a title="Medline Plus" href="https://medlineplus.gov/spanish/alzheimersdisease.html">
+                <img src="../img/MedlinePlus.jpg" alt="MedlinePlus"/></a>
+            </div>
+        </div>
+
+        <footer class="border">
+            <!-- logo -->
+            <div class="logo">
+            <a href="../index.html"><img src="../img/gw.jpg" alt=""></a>
+            <!-- fin logo -->
+            </div>
+            
+            <h3>Alcenter</h3>
+            <p>Author: Germán Waisvol<br>
+              <a href="mailto:">german_waisvol@hotmail.com</a></p>
+        </footer>
+    </div>
 </body>
 
 </html>
