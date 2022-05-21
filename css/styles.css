@@ -478,6 +478,7 @@ span{
 
 .barra-navegacion .lista-menu {
     display: block;
+    animation: rebotar .5s alternate;
 }
 
 .item-menu {
@@ -497,6 +498,7 @@ span{
   
   .logo{
   width: 50px;   
+  animation: rebotar .5s alternate;
   }
 
 /*Container para index.html*/
@@ -558,15 +560,27 @@ span{
     width:  auto;
     height: auto;
     background-position: top center;
+    animation: rebotar .5s alternate;
 }
 
+@keyframes rebotar {
+  from{
+    transform:scaleX(1.25)
+  }
+  to{
+    transform:scaleX(1) translateY(-50px);
+  }
+  
+}
 
 div.parrafo {
     grid-area: parrafo;
+    animation: rebotar .5s alternate;
 }
 
 div.texto {
   grid-area: texto;
+  animation: rebotar .5s alternate;
 }
 
 
