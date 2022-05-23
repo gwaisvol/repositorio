@@ -2,82 +2,403 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alstore</title>
-    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alcenter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-    <div class="container">
 
-        <div class="header">
-            <!-- inicio nav -->                        
-            <nav class="barra-navegacion">
-                <a href="../index.html" class="logo"><img src="../img/gw.jpg" alt=""></a>   
-                <input type="checkbox" id="check-menu">
-            <label for="check-menu" class="boton-menu"><i class='bx bx-menu'></i></label>
-                <ul class="lista-menu">
-                    <li class="item-menu"><a class="link-menu" href="../index.html"
-                            target="blank">Home</a></li>
-                    <li class="item-menu"><a class="link-menu" href="../pages/tienda.html" target="blank">Tienda</a>
-                    </li>
-                    <li class="item-menu"><a class="link-menu" href="../pages/explorar.html"
-                            target="blank">Explorar</a></li>
-                    <li class="item-menu"><a class="link-menu" href="../pages/faq.html" target="blank">FAQ</a>
-                    </li>
-                    <li class="item-menu"><a class="link-menu" href="../pages/contacto.html"
-                        target="blank">Contacto</a>
-                    </li>
-                    <li class="item-menu"><a class="link-menu" href="../pages/recursos.html" target="blank">Recursos</a>
-                    </li>
-                    
-                </ul>
+    
+    <main class="container">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+                <div class="container-fluid">
+                    <a href="../index.html" class="logo"><img src="../img/gw.jpg" alt=""></a>  
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/tienda.html">Tienda</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/faq.html">FAQ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="recursos" href="../pages/recursos.html">Recursos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
             </nav>
-        <!-- fin nav --> 
-        </div>
+        </header>
+        <section class="row">
+            <article class="col-md-6 col-lg-4 col-xxl-3" id="Alarma">
+                <div class="card text-center bg-primary text-dark h-100">
+                    <h3 class="card-header">Alarma</h3>
+                    <img src="../img/Alarma.jpg" alt="Alarma" data-bs-toggle="modal" data-bs-target="#modalAlarma" />
+                    <div class="card-body">
+                        <p class="card-text">Alarma de aviso. Previene el andar deambulando.</p>
+                        <p class="lead precio">$13.000</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-info btn-lg">Comprar</a>
+                    </div>
+                </div>
+                </div>
+            </article>
+            <article class="col-md-6 col-lg-4 col-xxl-3" id="Peluche">
+                <div class="card text-center bg-primary text-dark h-100">
+                    <h3 class="card-header">Peluche</h3>
+                    <img src="../img/peluche.jpg" alt="buzo" data-bs-toggle="modal" data-bs-target="#modalPeluche" />
 
-        <div class="parrafo"><h3>Alcenter</h3><h2>Productos diseñados para personas con Alzheimer</h2>
+                    <div class="card-body">
+                        <p class="card-text">Arthur - Osito de peluche terapéutico con música</p>
+                        <p class="lead precio">$8.000</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-info btn-lg">Comprar</a>
+                    </div>
+                </div>
+                </div>
+            </article>
+            <article class="col-md-6 col-lg-4 col-xxl-3" id="Celular">
+                <div class="card text-center bg-primary text-dark h-100">
+                    <h3 class="card-header">Celular</h3>
+                    <img src="../img/celular.jpg" alt="jean" data-bs-toggle="modal" data-bs-target="#modalCelular">
 
-        </div>
-        
-        <div class="texto"><h3>Elija el producto de su interés</h3></div>
+                    <div class="card-body">
+                        <p class="card-text">Teléfono celular para adultos, con botones grandes. Manejo fácil.</p>
+                        <p class="lead precio">$40.000</p>
+                    </div>
+                    <div class="card-footer">
 
-        <div>
-            <img class="imagen" src="../img/ancianos2.jpg" alt="">
-        </div>
+                        <a href="#" class="btn btn-info btn-lg">Comprar</a>
+                    </div>
+                </div>
+                </div>
+            </article>
+            <article class="col-md-6 col-lg-4 col-xxl-3" id="Radio">
+                <div class="card text-center bg-primary text-dark h-100">
+                    <h3 class="card-header">Radio</h3>
+                    <img src="../img/Radio.jpg" alt="Radio" data-bs-toggle="modal" data-bs-target="#modalRadio">
 
-        <div class="articulos">
-  
-            <div class="icon"><img src="../img/Alarma.jpg">  <h4>Alarma para puerta de dormitorio</h4> </div>
-            
-            <div class="icon"><img src="../img/telefono.jpg"> <h4>Teléfono manos libres</h4> </div>
-            
-            <div class="icon"><img src="../img/rompecabezas.jpg"> <h4>Rompecabezas de 35 piezas</h4> </div>
-            
-            <div class="icon"><img src="../img/peluche.jpg"> <h4>Arthur - Osito de peluche terapéutico con música</h4> </div>
-            
-             <div class="icon"><img src="../img/Radio.jpg"> <h4>Equipo de música sencillo</h4> </div>
-         
-            <div class="icon"><img src="../img/mascotaanimada.jpg"> <h4>Mascota animada</h4> </div>
-        
-          
-          </div>
+                    <div class="card-body">
+                        <p class="card-text">Radio de manejo sencillo. Un sólo botón.</p>
+                        <p class="lead precio">$10.000</p>
+                    </div>
+                    <div class="card-footer">
 
-        <footer class="border">
-            <!-- logo -->
-            <div class="logo">
-            <a href="../index.html"><img src="../img/gw.jpg" alt=""></a>
-            <!-- fin logo -->
+                        <a href="#" class="btn btn-info btn-lg">Comprar</a>
+                    </div>
+                </div>
+                </div>
+            </article>
+            <article class="col-md-6 col-lg-4 col-xxl-3" id="Rompecabezas">
+                <div class="card text-center bg-primary text-dark h-100">
+                    <h3 class="card-header">Rompecabezas</h3>
+                    <img src="../img/rompecabezas.jpg" alt="Rompecabezas" data-bs-toggle="modal"
+                        data-bs-target="#modalRompecabezas">
+
+                    <div class="card-body">
+                        <p class="card-text">Rompecabezas de 35 piezas sencillo. Set de 4 unidades.</p>
+                        <p class="lead precio">$10.000</p>
+                    </div>
+                    <div class="card-footer">
+
+                        <a href="#" class="btn btn-info btn-lg">Comprar</a>
+                    </div>
+                </div>
+                </div>
+            </article>
+            <article class="col-md-6 col-lg-4 col-xxl-3" id="gpstracker">
+                <div class="card text-center bg-primary text-dark h-100">
+                    <h3 class="card-header">GPS Tracker</h3>
+                    <img src="../img/gpstracker.jpg" alt="gpstracker" data-bs-toggle="modal" data-bs-target="#modalGpstracker">
+
+                    <div class="card-body">
+                        <p class="card-text">Reloj rastreador por GPS.</p>
+                        <p class="lead precio">$30.000</p>
+                    </div>
+                    <div class="card-footer">
+
+                        <a href="#" class="btn btn-info btn-lg">Comprar</a>
+                    </div>
+                </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="modales">
+            <div class="modal" id="modalAlarma" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="carouselAlarma" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../img/Alarma.jpg" class="d-block" alt="alarma1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Alarma2.jpg" class="d-block" alt="alarma2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Alarma3.jpg" class="d-block" alt="alarma3">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Alarma4.jpg" class="d-block" alt="alarma4">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Alarma5.png" class="d-block" alt="alarma5">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Alarma6.jpg" class="d-block" alt="alarma6">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselAlarma"
+                                    data-bs-slide=" prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselAlarma"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            
-            <h3>Alcenter</h3>
-            <p>Author: Germán Waisvol<br>
-              <a href="mailto:">german_waisvol@hotmail.com</a></p>
-        </footer>
-    </div>
+            <div class="modal" id="modalPeluche" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-peluche">
+                            <div id="carouselPeluche" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../img/peluche.jpg" class="d-block" alt="peluche1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/peluche2.jpg" class="d-block" alt="peluche2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/peluche3.jpg" class="d-block" alt="peluche3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPeluche"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselPeluche"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modalCelular" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="carouselCelular" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../img/celular.jpg" class="d-block" alt="celular1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/celular2.jpg" class="d-block" alt="celular2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/celular3.jpg" class="d-block" alt="celular3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCelular"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselCelular"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modalRadio" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="carouselRadio" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../img/Radio.jpg" class="d-block" alt="Radio1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Radio2.jpg" class="d-block" alt="Radio2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Radio3.jpg" class="d-block" alt="Radio3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselRadio"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselRadio"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modalRompecabezas" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="carouselRompecabezas" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../img/rompecabezas.jpg" class="d-block" alt="rompecabezas1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/rompecabezas2.jpg" class="d-block" alt="rompecabezas2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/rompecabezas3.jpg" class="d-block" alt="rompecabezas3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselRompecabezas"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselRompecabezas"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modalGpstracker" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="carouselGpstracker" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../img/gpstracker.jpg" class="d-block" alt="gpstracker">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/gpstracker2.jpg" class="d-block" alt="gpstracker2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/gpstracker3.jpg" class="d-block" alt="gpstracker3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselGpstracker"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselGpstracker"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+            <div class="container-fluid">
+              <a href="../index.html" class="logo"><img src="../img/gw.jpg" alt=""></a>  
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/tienda.html">Tienda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/faq.html">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="recursos" href="../pages/recursos.html">Recursos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
