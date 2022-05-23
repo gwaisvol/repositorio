@@ -2,86 +2,164 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alstore</title>
-    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alcenter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-    <div class="ContainerFaq">
 
-        <div class="header">
-            <!-- inicio nav -->                        
-            <nav class="barra-navegacion">
-                <a href="../index.html" class="logo"><img src="../img/gw.jpg" alt=""></a>   
-                <input type="checkbox" id="check-menu">
-            <label for="check-menu" class="boton-menu"><i class='bx bx-menu'></i></label>
-                <ul class="lista-menu">
-                    <li class="item-menu"><a class="link-menu" href="../index.html"
-                            target="blank">Home</a></li>
-                    <li class="item-menu"><a class="link-menu" href="../pages/tienda.html" target="blank">Tienda</a>
-                    </li>
-                    <li class="item-menu"><a class="link-menu" href="../pages/explorar.html"
-                            target="blank">Explorar</a></li>
-                    <li class="item-menu"><a class="link-menu" href="../pages/faq.html" target="blank">FAQ</a>
-                    </li>
-                    <li class="item-menu"><a class="link-menu" href="../pages/contacto.html"
-                        target="blank">Contacto</a>
-                    </li>
-                    <li class="item-menu"><a class="link-menu" href="../pages/recursos.html" target="blank">Recursos</a>
-                    </li>
-                    
-                </ul>
+    
+    <main class="container">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+                <div class="container-fluid">
+                    <a href="../index.html" class="logo"><img src="../img/gw.jpg" alt=""></a>  
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/tienda.html">Tienda</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/faq.html">FAQ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="recursos" href="../pages/recursos.html">Recursos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
             </nav>
-        <!-- fin nav --> 
-        </div>
-
-        <div class="parrafo"><h3>Alcenter</h3><h2>Productos diseñados para personas con Alzheimer</h2>
-
-        </div>
+        </header>
         
-        <div class="texto"><h3>Preguntas frecuentes</h3></div>
+        <div id="accordion">
 
-        <div>
-            <img class="imagen" src="../img/ancianos2.jpg" alt="">
-        </div>
-
-        <div class="faq">
-            <h3>¿Se ha enviado mi orden?</h3>
-            <p>Haga click en el link en el borde superior derecho :"Mi cuenta/Order status"</p>
-        <h3>¿Cómo puedo cambiar cantidades o cancelar un item en mi orden?</h3>
-            <p>Haga click en el link en el borde superior derecho :"Mi cuenta/Order status" para ver su orden. Luego haga
-            click en el link "Cambiar cantidades/ Cancelar orden". Tenga en cuenta que una vez que su orden ha sido
-            procesada o se ha enviado, la orden ya no es editable."</p>
-        <h3>¿Cómo puedo rastrear mi orden?</h3>
-            <p>Haga click en el link en el borde superior derecho :"Mi cuenta/Order status"</p>
-        <h3>Mi orden nunca llegó</h3>
-            <p>Haga click en el link en el borde superior derecho :"Mi cuenta/Order status". Verfique que todos los items de
-                su orden han sido envaidos. Si su orden muestra un Track Number, verifiqué con la empresa de transporte que
-                su paquete ha sido envido. Si el paquete muestra el estado "enviado", por favor contacte al contact center para recibir
-                asistencia</p>	
-        <h3>Falta un item en mi orden</h3>
-            <p>Haga click en el link en el borde superior derecho :"Mi cuenta/Order status". Si su orden figura como enviada,
-                por favor contacte al contact center.</p>
-        <h3>¿Cómo puedo crear una cuenta?</h3>
-            <p>Haga click en el link en el borde superior derecho que dice "Crear cuenta"</p>
-        </div>
-
-        <footer class="border">
-            <!-- logo -->
-            <div class="logo">
-            <a href="../index.html"><img src="../img/gw.jpg" alt=""></a>
-            <!-- fin logo -->
+            <div class="card">
+                <div class="card-header">
+                  <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                      ¿Se ha enviado mi orden?
+                  </a>
+                </div>
             </div>
+                <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                  <div class="card-body">
+                      Haga click en el link en el borde superior derecho :"Mi cuenta/Order status"
+                  </div>
+                </div>
             
-            <h3>Alcenter</h3>
-            <p>Author: Germán Waisvol<br>
-              <a href="mailto:">german_waisvol@hotmail.com</a></p>
-        </footer>
-    </div>
+            
+            <div class="card">
+                <div class="card-header">
+                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                      ¿Cómo puedo cambiar cantidades o cancelar un item en mi orden?
+                  </a>
+                </div>
+            </div>
+
+                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                      Haga click en el link en el borde superior derecho :"Mi cuenta/Order status" para ver su orden. Luego haga
+                      click en el link "Cambiar cantidades/ Cancelar orden". Tenga en cuenta que una vez que su orden ha sido
+                      procesada o se ha enviado, la orden ya no es editable."
+                  </div>
+                </div>
+            
+            
+            <div class="card">
+                <div class="card-header">
+                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                      ¿Cómo puedo rastrear mi orden?
+                  </a>
+                </div>
+            </div>
+  
+            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                      Haga click en el link en el borde superior derecho :"Mi cuenta/Order status"</p>
+                  </div>
+            </div>
+  
+            <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+                      Falta un item en mi orden
+                    </a>
+                  </div>
+            </div>
+                  <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                      Haga click en el link en el borde superior derecho :"Mi cuenta/Order status". Si su orden figura como enviada,
+                      por favor contacte al contact center.</p>
+                    </div>
+                  </div>
+  
+                  <div class="card">
+                      <div class="card-header">
+                        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
+                          ¿Cómo puedo crear una cuenta?
+                        </a>
+                      </div>
+                  </div>
+
+                      <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body">
+                          Haga click en el link en el borde superior derecho que dice "Crear cuenta"</p>
+                        </div>
+                      </div>
+  
+          </div>
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+            <div class="container-fluid">
+              <a href="../index.html" class="logo"><img src="../img/gw.jpg" alt=""></a>  
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/tienda.html">Tienda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/faq.html">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="recursos" href="../pages/recursos.html">Recursos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

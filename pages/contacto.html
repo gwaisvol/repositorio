@@ -2,109 +2,148 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alstore</title>
-    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alcenter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-    <div class="ContainerContacto">
-
-        <div class="header">
-            <!-- inicio nav -->                        
-            <nav class="barra-navegacion">
-                <a href="../index.html" class="logo"><img src="../img/gw.jpg" alt=""></a>   
-                <input type="checkbox" id="check-menu">
-            <label for="check-menu" class="boton-menu"><i class='bx bx-menu'></i></label>
-                <ul class="lista-menu">
-                    <li class="item-menu"><a class="link-menu" href="../index.html"
-                            target="blank">Home</a></li>
-                    <li class="item-menu"><a class="link-menu" href="../pages/tienda.html" target="blank">Tienda</a>
-                    </li>
-                    <li class="item-menu"><a class="link-menu" href="../pages/explorar.html"
-                            target="blank">Explorar</a></li>
-                    <li class="item-menu"><a class="link-menu" href="../pages/faq.html" target="blank">FAQ</a>
-                    </li>
-                    <li class="item-menu"><a class="link-menu" href="../pages/contacto.html"
-                        target="blank">Contacto</a>
-                    </li>
-                    <li class="item-menu"><a class="link-menu" href="../pages/recursos.html" target="blank">Recursos</a>
-                    </li>
-                    
-                </ul>
+ 
+    <main class="container">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+                <div class="container-fluid">
+                    <a href="../index.html" class="logo"><img src="../img/gw.jpg" alt=""></a>  
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/tienda.html">Tienda</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/faq.html">FAQ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="recursos" href="../pages/recursos.html">Recursos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
             </nav>
-        <!-- fin nav --> 
-        </div>
-
-        <div class="Contacto">
-          <div class="formulario">     
-            <h1>Alcenter</h1> 
-             <h1>Formulario de contacto</h1>
-            <h3>Escríbenos y déjenos su consulta:</h3>
+        </header>
         
-        
-              <form action="" method="post">       
-        
-              
-                <p>
-                  <label for="nombre" class="colocar_nombre">Nombre
-                  <span class="obligatorio">*</span>
-                  </label>
-                  <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                </p>
-                
-                <p>
-                  <label for="email" class="colocar_email">Email
-                  <span class="obligatorio">*</span>
-                  </label>
-                  <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-                </p>
-              
-                <p>
-                  <label for="Teléfono" class="colocar_telefono">Teléfono
-                  </label>
-                  <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                </p>    
-                
-                
-                <p>
-                  <label for="asunto" class="colocar_asunto">Asunto
-                  <span class="obligatorio">*</span>
-                  </label>
-                  <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-                </p>    
-                
-                <p>
-                  <label for="mensaje" class="colocar_mensaje">Mensaje
-                  <span class="obligatorio">*</span>
-                  </label>                     
-                          <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                        </p>                    
-                
-                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
-        
-                <p class="aviso">
-                  <span class="obligatorio"> * </span>los campos son obligatorios.
-                </p>          
-              
-              </form>
+        <div class="presentacion">
+          <div class="row">
+  
+  
+              <div class="col-md-6 col-lg-4 col-xxl-3" id="ArticulosRecomendados">
+                      <h4 class="card-header text-center">Alcenter</h4>
+                      <img src="../img/ancianos3.jpg" alt="Alcenter" data-bs-toggle="Alcenter" data-bs-target="#Alcenter" />
+                      <div class="card-body">
+                  </div>
+              </div>
+  
+              <div class="col-md-6 col-lg-8 col-xxl-3">
+                  <h4 class="card-header">Formulario de contacto</h4>
+                  <p>Complete el siguiente formulario y nos pondremos en contacto con usted a la brevedad. </p>
+              </div>
           </div>
         </div>
 
-        <footer class="border">
-          <!-- logo -->
-          <div class="logo">
-          <a href="../index.html"><img src="../img/gw.jpg" alt=""></a>
-          <!-- fin logo -->
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
           </div>
-          
-          <h3>Alcenter</h3>
-          <p>Author: Germán Waisvol<br>
-            <a href="mailto:">german_waisvol@hotmail.com</a></p>
-         </footer>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Olazabal 4498">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label">Dirección 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Departamento, casa, piso.">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Ciudad</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">Estado</label>
+            <select id="inputState" class="form-select">
+              <option selected>Elija...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Código Postal</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Guardar mis datos
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+          </div>
+        </form>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+            <div class="container-fluid">
+              <a href="../index.html" class="logo"><img src="../img/gw.jpg" alt=""></a>  
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/tienda.html">Tienda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/faq.html">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="recursos" href="../pages/recursos.html">Recursos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
