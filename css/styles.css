@@ -22,5 +22,41 @@ nav,h1,h2,h3,h4,p {
     margin: 10px;
     }
 
+.ImagenPresentacion{
+    animation: rebotar 0.5s alternate;
+}
+
+@keyframes rebotar {
+    from{
+        transform:scaleX(1.25)
+    }
+    to{
+        transform:scaleX(1) translateX(-50px);
+    }
+        
+}
+
+.slidein {
+    animation-duration: 0.5s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left:100%;
+      width:300%
+    }
+  
+    to {
+     margin-left:0%;
+     width:100%;
+   }
+  }
+
+  p {
+    animation: 1s  slidein;
+  }
+
+
 
     
