@@ -1,5 +1,10 @@
 @charset "UTF-8";
-nav, h1, h2, h3, h4, p {
+nav,
+h1,
+h2,
+h3,
+h4,
+p {
   margin: 10px; }
 
 .slidein {
@@ -15,7 +20,51 @@ nav, h1, h2, h3, h4, p {
     width: 100%; } }
 
 p {
-  animation: 1s  slidein; }
+  animation: 1s slidein; }
+
+/* Definiendo un map.*/
+.tarjetas, .tarjetas--dark {
+  background-color: white;
+  /*width: 20rem;*/
+  overflow: hidden;
+  margin: 0rem;
+  box-shadow: 5px 5px 5px 5px #000;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+  /* Usando la funcion mixins.*/ }
+  .tarjetas.img, .img.tarjetas--dark {
+    height: 15rem;
+    background-size: cover;
+    background-position: center center;
+    max-width: 100%; }
+  .tarjetas .tarjetas_content, .tarjetas--dark .tarjetas_content {
+    padding: 2rem; }
+  .tarjetas .tarjetas_title, .tarjetas--dark .tarjetas_title {
+    /* Usando un map-get.*/
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    color: black; }
+  .tarjetas .tarjetas_description, .tarjetas--dark .tarjetas_description {
+    /* Usando un map-get.*/
+    font-size: 16px;
+    margin: 0;
+    color: #999; }
+  .tarjetas--dark {
+    border-width: 3px;
+    background-color: black; }
+    .tarjetas--dark .tarjetas_title {
+      color: white; }
+
+/*Vista Movile*/
+@media screen and (max-width: 767px) {
+  .tarjetas, .tarjetas--dark {
+    width: 15rem; } }
+
+/*Vista Desktop*/
+@media screen and (min-width: 768px) {
+  .tarjetas, .tarjetas--dark {
+    width: 20rem; } }
 
 main {
   background-color: lavenderblush; }
@@ -27,8 +76,7 @@ main {
     max-width: 100%;
     height: auto; }
   .logo {
-    width: 50px;
-    /*animation: rebotar .5s alternate;*/ }
+    width: 50px; }
   /*Para la página de Libros*/
   .ContainerLibros {
     max-width: 1250px;
@@ -39,8 +87,7 @@ main {
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto auto;
     grid-column-gap: 10px;
-    grid-row-gap: 15px;
-    /*Las siguientes líneas son para el tamaño de los libros y tamaño de letra*/ }
+    grid-row-gap: 15px; }
     .ContainerLibros div.parrafo {
       grid-area: parrafo; }
     .ContainerLibros div.texto {
@@ -50,11 +97,6 @@ main {
       display: grid;
       grid-template-columns: 2;
       grid-gap: 1rem; }
-    .ContainerLibros.icon {
-      /*background-color:rgba(199, 198, 198, 0.18);*/
-      flex: 1 1 150px; }
-    .ContainerLibros.icon img {
-      max-width: 100%; }
     .ContainerLibros .imagen {
       grid-area: imagen;
       display: none; } }
@@ -66,8 +108,7 @@ main {
     max-width: 100%;
     height: auto; }
   .logo {
-    width: 50px;
-    /*animation: rebotar .5s alternate;*/ }
+    width: 50px; }
   /*Para la página de Libros*/
   .ContainerLibros {
     max-width: 1250px;
@@ -79,13 +120,9 @@ main {
     grid-template-rows: auto auto auto auto;
     grid-column-gap: 10px;
     grid-row-gap: 15px;
-    /* background-color: rgba(199, 198, 198, 0.18);*/
     /*Las siguientes líneas son para el tamaño de los libros y tamaño de letra*/ }
     .ContainerLibros .imagen {
       grid-area: imagen;
-      /*background-color: #d5c9e2;*/
-      /*Lo siguiente es para que se vea bien la imagen*/
-      /*min-height: 300px;*/
       width: auto;
       height: auto;
       background-position: top center; }
@@ -99,7 +136,6 @@ main {
       grid-template-columns: 1;
       grid-gap: 1rem; }
     .ContainerLibros.icon {
-      /*background-color:rgba(199, 198, 198, 0.18);*/
       flex: 1 1 150px; }
     .ContainerLibros.icon img {
       max-width: 100%; } }

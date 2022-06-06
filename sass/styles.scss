@@ -1,37 +1,38 @@
 @import 'texto';
-@import 'colores';
+@import 'variables';
+@import 'mixins';
+@import 'tarjetas';
 
-main{
-    background-color:$primary-color;
+main {
+  background-color: $primary-color;
 }
 
 
 /*Vista Movile*/
 @media screen and (max-width:767px) {
 
-      /*Las siguientes configuraciones (img y .logo), hace que el logo se vea bien y no se valla de medida*/
-  img{
+  /*Las siguientes configuraciones (img y .logo), hace que el logo se vea bien y no se valla de medida*/
+  img {
     max-width: 100%;
     height: auto;
-    }
-    
-    .logo{
-    width: 50px;   
-    /*animation: rebotar .5s alternate;*/
-    }
-    
+  }
 
-    /*Para la página de Libros*/
-  .ContainerLibros{
+  .logo {
+    width: 50px;
+  }
+
+
+  /*Para la página de Libros*/
+  .ContainerLibros {
     max-width: 1250px;
     margin: 0 auto;
     padding: 0 60px;
     display: grid;
-    grid-template-areas:"parrafo parrafo"
-    "Libros Libros"
-    "Libros Libros"
-    "imagen imagen";
-    grid-template-columns:  50% 50%;
+    grid-template-areas: "parrafo parrafo"
+      "Libros Libros"
+      "Libros Libros"
+      "imagen imagen";
+    grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto auto;
     grid-column-gap: 10px;
     grid-row-gap: 15px;
@@ -41,99 +42,83 @@ main{
     }
 
     div.texto {
-    grid-area: texto;
+      grid-area: texto;
     }
 
-    .Libros{
+    .Libros {
       grid-area: Libros;
       display: grid;
       grid-template-columns: 2;
       grid-gap: 1rem;
     }
-    
-          /*Las siguientes líneas son para el tamaño de los libros y tamaño de letra*/
-      &.icon {
-        /*background-color:rgba(199, 198, 198, 0.18);*/
-        flex: 1 1 150px;
-    }
 
-    &.icon img {
-     max-width: 100%;
-    }
-
-    .imagen{
+    .imagen {
       grid-area: imagen;
-      display:none;
+      display: none;
     }
   }
 
-    }
+}
 
-    /*Vista Desktop*/
+/*Vista Desktop*/
 @media screen and (min-width:768px) {
 
-  
-/*Las siguientes configuraciones (img y .logo), hace que el logo se vea bien y no se valla de medida*/
-  img{
+
+  /*Las siguientes configuraciones (img y .logo), hace que el logo se vea bien y no se valla de medida*/
+  img {
     max-width: 100%;
     height: auto;
-    }
-    
-    .logo{
-    width: 50px;   
-    /*animation: rebotar .5s alternate;*/
-    }
+  }
 
- /*Para la página de Libros*/
- .ContainerLibros {
+  .logo {
+    width: 50px;
+  }
+
+  /*Para la página de Libros*/
+  .ContainerLibros {
     max-width: 1250px;
     margin: 0 auto;
     padding: 0 60px;
     display: grid;
     grid-template-areas: "imagen parrafo parrafo"
-    "imagen parrafo parrafo"
-    "imagen parrafo parrafo"
-    "Libros Libros Libros" ;
-    grid-template-columns:  0.4fr 0.3fr 0.3fr;
+      "imagen parrafo parrafo"
+      "imagen parrafo parrafo"
+      "Libros Libros Libros";
+    grid-template-columns: 0.4fr 0.3fr 0.3fr;
     grid-template-rows: auto auto auto auto;
     grid-column-gap: 10px;
     grid-row-gap: 15px;
-   /* background-color: rgba(199, 198, 198, 0.18);*/
-  
-   .imagen{
-       grid-area: imagen;
-       /*background-color: #d5c9e2;*/
-       /*Lo siguiente es para que se vea bien la imagen*/
-       /*min-height: 300px;*/
-       width:  auto;
-       height: auto;
-       background-position: top center;
-   }
 
-   div.parrafo {
-       grid-area: parrafo;
-   }
+    .imagen {
+      grid-area: imagen;
+      width: auto;
+      height: auto;
+      background-position: top center;
+    }
 
-   div.texto {
-     grid-area: texto;
-   }
+    div.parrafo {
+      grid-area: parrafo;
+    }
 
-   .Libros{
-       grid-area: Libros;
-       display: grid;
-       grid-template-columns: 1;
-       grid-gap: 1rem;
-   }
+    div.texto {
+      grid-area: texto;
+    }
 
-   /*Las siguientes líneas son para el tamaño de los libros y tamaño de letra*/
- &.icon {
- /*background-color:rgba(199, 198, 198, 0.18);*/
- flex: 1 1 150px;
- }
+    .Libros {
+      grid-area: Libros;
+      display: grid;
+      grid-template-columns: 1;
+      grid-gap: 1rem;
+    }
 
- &.icon img {
-  max-width: 100%;
- }
+    /*Las siguientes líneas son para el tamaño de los libros y tamaño de letra*/
+    &.icon {
+      flex: 1 1 150px;
+    }
 
-  }   
+    &.icon img {
+      max-width: 100%;
+    }
+
+  }
 }
