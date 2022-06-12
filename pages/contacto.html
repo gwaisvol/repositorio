@@ -47,8 +47,8 @@
               </li>
             </ul>
             <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <input class="form-control me-2" type="buscar" placeholder="Ingrese su busqueda:" aria-label="Buscar">
+              <button class="btn btn-dark" type="submit">Buscar</button>
             </form>
           </div>
         </div>
@@ -58,67 +58,71 @@
     <div class="presentacion">
       <div class="row">
 
-
-        <div class="col-md-6 col-lg-4 col-xxl-3" id="ArticulosRecomendados">
-          <h1 class="card-header text-center">Alcenter</h1>
-          <img src="../img/ancianos3.jpg" class="ImagenPresentacion" alt="Alcenter" data-bs-toggle="Alcenter"
-            data-bs-target="#Alcenter" />
-          <div class="card-body">
+        <div class="presentacion">
+          <div class="card mb-3 text-dark bg-light" style="width: 69rem">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../img/ancianos3.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h1 class="card-title">Formulario de contacto</h1>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-8 col-xxl-3">
-          <h2 class="card-header">Formulario de contacto</h2>
-          <p>Complete el siguiente formulario y nos pondremos en contacto con usted a la brevedad. </p>
-        </div>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="german_waisvol@hotmail.com">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="pepe1234">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Olazabal 4498">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label">Dirección 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Departamento, casa, piso.">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Ciudad</label>
+            <input type="text" class="form-control" id="inputCity" placeholder="Capital Federal">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">Estado</label>
+            <select id="inputState" class="form-select">
+              <option selected>Elija...</option>
+              <option>Villa Urquiza</option>
+              <option>Villa Pueyrredon</option>
+              <option>Almagro</option>
+              <option>Palermo</option>
+              <option>Retiro</option>
+              <option>Flores</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Código Postal</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Guardar mis datos
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+          </div>
+        </form>
       </div>
-    </div>
-
-    <form class="row g-3">
-      <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail4" placeholder="german_waisvol@hotmail.com">
-      </div>
-      <div class="col-md-6">
-        <label for="inputPassword4" class="form-label">Password</label>
-        <input type="password" class="form-control" id="inputPassword4" placeholder="pepe1234">
-      </div>
-      <div class="col-12">
-        <label for="inputAddress" class="form-label">Dirección</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="Olazabal 4498">
-      </div>
-      <div class="col-12">
-        <label for="inputAddress2" class="form-label">Dirección 2</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="Departamento, casa, piso.">
-      </div>
-      <div class="col-md-6">
-        <label for="inputCity" class="form-label">Ciudad</label>
-        <input type="text" class="form-control" id="inputCity" placeholder="Capital Federal">
-      </div>
-      <div class="col-md-4">
-        <label for="inputState" class="form-label">Estado</label>
-        <select id="inputState" class="form-select">
-          <option selected>Elija...</option>
-          <option>...</option>
-        </select>
-      </div>
-      <div class="col-md-2">
-        <label for="inputZip" class="form-label">Código Postal</label>
-        <input type="text" class="form-control" id="inputZip">
-      </div>
-      <div class="col-12">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
-            Guardar mis datos
-          </label>
-        </div>
-      </div>
-      <div class="col-12">
-        <button type="submit" class="btn btn-primary">Ingresar</button>
-      </div>
-    </form>
-
   </main>
 
 
