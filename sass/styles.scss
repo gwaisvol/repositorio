@@ -1,5 +1,5 @@
-@import 'texto';
 @import 'variables';
+@import 'texto';
 @import 'mixins';
 @import 'tarjetas';
 
@@ -23,18 +23,18 @@ main {
 
 
   /*Para la página de Libros*/
-  .ContainerLibros {
+  .container-libros {
     max-width: 1250px;
     margin: 0 auto;
     padding: 0 60px;
     display: grid;
-    grid-template-areas: "parrafo parrafo"
-      "Libros Libros"
-      "Libros Libros"
-      "imagen imagen";
-    grid-template-columns: 50% 50%;
+    grid-template-areas: "parrafo"
+      "tarjetas1"
+      "tarjetas2"
+      "tarjetas3";
+    grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
-    grid-column-gap: 10px;
+    grid-column-gap: 20px;
     grid-row-gap: 15px;
 
     div.parrafo {
@@ -45,14 +45,25 @@ main {
       grid-area: texto;
     }
 
-    .Libros {
-      grid-area: Libros;
+    div#1.tajetas {
+      grid-area: tarjetas1;
       display: grid;
-      grid-template-columns: 2;
       grid-gap: 1rem;
     }
 
-    .imagen {
+    div#2.tajetas {
+      grid-area: tarjetas2;
+      display: grid;
+      grid-gap: 1rem;
+    }
+
+    div#3.tajetas {
+      grid-area: tarjetas3;
+      display: grid;
+      grid-gap: 1rem;
+    }
+
+    div.imagen {
       grid-area: imagen;
       display: none;
     }
@@ -75,21 +86,21 @@ main {
   }
 
   /*Para la página de Libros*/
-  .ContainerLibros {
+  .container-libros {
     max-width: 1250px;
     margin: 0 auto;
     padding: 0 60px;
     display: grid;
     grid-template-areas: "imagen parrafo parrafo"
-      "imagen parrafo parrafo"
-      "imagen parrafo parrafo"
-      "Libros Libros Libros";
+      "tarjetas1 tarjetas2 tarjetas3"
+      "tarjetas1 tarjetas2 tarjetas3"
+      "tarjetas1 tarjetas2 tarjetas3";
     grid-template-columns: 0.4fr 0.3fr 0.3fr;
     grid-template-rows: auto auto auto auto;
     grid-column-gap: 10px;
     grid-row-gap: 15px;
 
-    .imagen {
+    div.imagen {
       grid-area: imagen;
       width: auto;
       height: auto;
@@ -100,14 +111,21 @@ main {
       grid-area: parrafo;
     }
 
-    div.texto {
-      grid-area: texto;
+    div#1.tarjetas {
+      grid-area: tarjetas1;
+      display: grid;
+      grid-gap: 1rem;
     }
 
-    .Libros {
-      grid-area: Libros;
+    div#2.tarjetas {
+      grid-area: tarjetas2;
       display: grid;
-      grid-template-columns: 1;
+      grid-gap: 1rem;
+    }
+
+    div#3.tarjetas {
+      grid-area: tarjetas3;
+      display: grid;
       grid-gap: 1rem;
     }
 
