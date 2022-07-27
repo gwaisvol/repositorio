@@ -1,12 +1,10 @@
-
 //FUNCIONES
 function ElegirProductos() {
     //VARIABLES
     let SEGUIR = "s";
     let COSTO = 0;
-
+    console.log("Bienvenido a página especializada en venta de artículos para personas con Alzheimer");
     while ((SEGUIR == "S") || (SEGUIR == "s")) {
-        console.log("Bienvenido a página especializada en venta de artículos para personas con Alzheimer");
         SELECCION = prompt("Seleccione el artículo que desea comprar");
 
         switch (SELECCION) {
@@ -83,20 +81,20 @@ function ElegirCuotas(PRECIOSINIVA) {
     return COSTOCUOTAS;
 }
 
-    function CalculaIVA(PRECIOSINIVACUOTAS) {
-        let PRECIOCONIVACUOTAS=0;
-        PRECIOCONIVACUOTAS=(PRECIOSINIVACUOTAS*1.25);
-        return PRECIOSINIVACUOTAS;
-    }
+function CalculaIVA(PRECIOSINIVACUOTAS) {
+    let PRECIOCONIVACUOTAS = 0;
+    PRECIOCONIVACUOTAS = (PRECIOSINIVACUOTAS * 1.25);
+    return PRECIOSINIVACUOTAS;
+}
 
 
-    //Inicio del programa
-    //VARIABLES
-    let PRECIOSINIVA = 0;
-    let PRECIOCONIVA = 0;
-    PRECIOSINIVA = ElegirProductos();
-    console.log("El precio sin iva es:" + PRECIOSINIVA);
-    PRECIOSINIVACUOTAS = ElegirCuotas(PRECIOSINIVA);
-    console.log("El precio de las cuotas seleccionadas es:" + PRECIOSINIVACUOTAS);
-    PRECIOCONIVA = CalculaIVA(PRECIOSINIVACUOTAS);
-    console.log("El precio de cada cuota con iva incluido es:" + PRECIOCONIVA);
+//Inicio del programa
+//VARIABLES
+let PRECIOSINIVA = 0;
+let PRECIOCONIVA = 0;
+PRECIOSINIVA = ElegirProductos();
+console.log("El precio sin iva es:" + PRECIOSINIVA);
+PRECIOSINIVACUOTAS = ElegirCuotas(PRECIOSINIVA);
+console.log("El precio de las cuotas seleccionadas es:" + PRECIOSINIVACUOTAS);
+PRECIOCONIVA = CalculaIVA(PRECIOSINIVACUOTAS);
+console.log("El precio de cada cuota con iva incluido es:" + PRECIOCONIVA);
